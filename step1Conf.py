@@ -16,7 +16,7 @@ config.Data.unitsPerJob = 1000
 #NJOBS = 10  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 #config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.totalUnits = 50000
-config.Data.outLFNDirBase = '/store/user/lian'
+config.Data.outLFNDirBase = '/store/user/%s' % (getUsernameFromSiteDB())
 config.Data.publication = True
 config.Data.outputDatasetTag = 'CRAB3_SingleMu_MC_step1_50k'
 
